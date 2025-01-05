@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="/pizzaorder/style.css" />
+  </head>
+  <body>
+    <header id="top-bar" class="visible-bar">Pizza Customizer</header>
+    <main>
+      <section id="size-section">
+        <h2>Select Pizza Size</h2>
+        <div id="size-buttons" class="button-group">
+          <button data-size="Small">Small ($8)</button>
+          <button data-size="Medium">Medium ($12)</button>
+          <button data-size="Large">Large ($15)</button>
+        </div>
+      </section>
+
+      <section id="crust-section">
+        <h2>Select Crust Type</h2>
+        <div id="crust-buttons" class="button-group">
+          <button data-crust="Thin">Thin ($2)</button>
+          <button data-crust="Thick">Thick ($3)</button>
+          <button data-crust="Stuffed">Stuffed ($4)</button>
+        </div>
+      </section>
+
+      <section id="toppings-section">
+        <h2>Select Toppings ($1 each)</h2>
+        <label
+          ><input
+            type="checkbox"
+            class="topping-checkbox"
+            data-topping="Cheese"
+          />
+          Cheese</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="topping-checkbox"
+            data-topping="Pepperoni"
+          />
+          Pepperoni</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="topping-checkbox"
+            data-topping="Mushrooms"
+          />
+          Mushrooms</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="topping-checkbox"
+            data-topping="Olives"
+          />
+          Olives</label
+        >
+      </section>
+
+      <section id="summary-section">
+        <h2>Order Summary</h2>
+        <p>Total Price: <span id="total-price">$0</span></p>
+        <p>Tax (10%): <span id="tax-amount">$0</span></p>
+        <p>Final Amount: <span id="final-amount">$0</span></p>
+      </section>
+    </main>
+    <script src="/pizzaorder/app.js"></script>
+  </body>
+</html>
