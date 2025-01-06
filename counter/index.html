@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f7f7f7;
+      }
+      .counter {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .increment {
+        background-color: #28a745;
+        color: white;
+      }
+      .decrement {
+        background-color: #dc3545;
+        color: white;
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter" id="counter">0</div>
+    <button class="increment" id="increment-btn">Increment</button>
+    <button class="decrement" id="decrement-btn">Decrement</button>
+
+    <script src="/counter/app.js"></script>
+  </body>
+</html>
